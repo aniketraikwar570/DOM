@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    #target-div {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="target-div">Hello, I'm a div!</div>
+
+  <script>
+    // Fetch the div element by ID
+    const targetDiv = document.getElementById("target-div");
+
+    // Apply the required styles dynamically
+    targetDiv.style.backgroundColor = "yellow";
+    targetDiv.style.margin = "20px";
+    targetDiv.style.padding = "10px";
+    targetDiv.style.fontSize = "18px";
+    targetDiv.style.fontWeight = "bold";
+    targetDiv.style.height = "200px";
+    targetDiv.style.width = "300px";
+  </script>
+</body>
+</html>
